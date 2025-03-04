@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, rgb(233, 214, 106), rgb(210, 180, 104));
+    padding: 20px;
+    color: rgb(7, 9, 59);
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 10px;
+    background: rgba(255, 215, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white
+    font-size 1.2em;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(224, 149, 73);
+}
+
+/* Hotel Information */
+.hotel-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.hotel-details {
+    max-width: 400px;
+    text-align: left;
+}
+
+.hotel-details h2 {
+    color: rgb(196, 223, 139);
+}
+
+.stars {
+    font-size: 2em;
+    color:white
+}
+
+.hotel-images img {
+    width: 280px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(93, 175, 196);
+}
+
+/* Booking Section */
+.booking {
+    background: rgba(255, 215, 0, 0.1);
+    padding: 40px;
+    margin-top: 30px;
+}
+
+.book-btn {
+    padding: 15px 30px;
+    background: rgb(175, 172, 9);
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background: rgb(62, 72, 203);
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: rgba(6, 5, 19, 0.1);
+    margin-top: 30px;
+}
