@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    text-align: center;
+}
+
+header {
+    background-color: #e07422;
+    color:white;
+    padding: 20px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color:black;
+    border-radius: 10px;
+    box-shadow: white;
+    align-items: center;
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+/* Flexbox container for the image and text */
+.project, 
+.project1, 
+.project2,  
+.achievements, 
+.participation, 
+.podcast, 
+.big-project, 
+.languages {
+    display: flex;
+    justify-content: space-between; /* Space between text and image */
+    align-items: center;
+    margin-bottom: 20px; /* Add some space between sections */
+    color: white;
+}
+
+/* Image styling */
+.project img, 
+.project1 img, 
+.project2 img,  
+.achievements img, 
+.participation img, 
+.podcast img, 
+.big-project img,
+.certifications {
+    display: flex;
+    justify-content: flex-start; /* Align to the left (or use 'center' if you want centered) */
+    align-items: center;
+    margin-bottom: 10px; /* Reduce bottom margin if there's extra space below */
+    gap: 0; /* Remove the gap between the flex items */
+    padding: 0; /* Ensure there's no extra padding */
+}
+
+.certifications p {
+    color: white;
+    margin-right: 10px; /* Reduce right margin to control space between text and image */
+}
+
+.certifications img {
+    width: 50%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-left: 0; /* Ensure no extra margin on the left of the image */
+}
+
+
+.languages img {
+    width: 50%; /* Make image take up half of the section */
+    max-width: 300px;
+    border-radius: 10px;
+}
+.languages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px; /* Add space between text and image */
+}
+
+.languages p {
+    color: white;
+    flex: 1;
+}
+
+.languages img {
+    width: 50%; /* Keep the image size */
+    max-width: 300px;
+    border-radius: 10px;
+}
+/* Text styling */
+.project p, 
+.project1 p, 
+.project2 p, 
+.certifications p, 
+.achievements p, 
+.participation p, 
+.podcast p, 
+.big-project p, 
+.languages p {
+    width: 50%; /* Text will take up the other half */
+    text-align: left; /* Ensure the text aligns to the left */
+}
+
+/* Alternating the flex order for odd and even sections */
+.project:nth-child(odd), 
+.project1:nth-child(odd), 
+.project2:nth-child(odd), 
+.certifications:nth-child(odd), 
+.achievements:nth-child(odd), 
+.participation:nth-child(odd), 
+.podcast:nth-child(odd), 
+.big-project:nth-child(odd), 
+.languages:nth-child(odd) {
+    flex-direction: row-reverse; /* Image on the right, text on the left for odd sections */
+}
+
+ul {
+    list-style: none;
+}
+
+#contact {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
